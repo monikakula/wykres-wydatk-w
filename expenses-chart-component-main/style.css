@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'DM SANS', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(27, 66%, 92%);
+	height: 100vh;
+}
+.main-container {
+	display: flex;
+	flex-direction: column;
+	min-width: 40rem;
+	gap: 2rem;
+}
+.header {
+	background-color: hsl(10, 79%, 65%);
+	height: 10rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 2rem;
+}
+.text-head {
+	font-size: 1.4rem;
+	color: hsl(27, 66%, 92%);
+}
+.text-head span {
+	font-size: 2.6rem;
+	font-weight: 600;
+	color: hsl(33, 100%, 98%);
+}
+h1 {
+	font-size: 2.4rem;
+	color: hsl(25, 47%, 15%);
+}
+.chart-container {
+	height: 40rem;
+	background-color: hsl(33, 100%, 98%);
+	border-radius: 2rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.chart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2rem;
+}
+.day {
+	width: 4rem;
+	height: 12rem;
+	background-color: hsl(10, 79%, 65%);
+	border-radius: 4px;
+	text-align: center;
+	position: relative;
+}
+.day:hover {
+	background-color: hsl(10, 78%, 73%);
+	cursor: pointer;
+}
+.mon {
+	height: 4rem;
+	top: 6rem;
+}
+p {
+	font-size: 1.2rem;
+	color: inherit;
+}
+div.days {
+	display: flex;
+	flex-direction: row;
+	gap: 4.2rem;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0.2rem;
+}
+div.days p {
+	color: inherit;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+p .price {
+	position: absolute;
+	top: 20rem;
+}
+
+.tue {
+	height: 8rem;
+	top: 4rem;
+}
+
+.wed {
+	height: 12rem;
+	top: 2rem;
+}
+
+.thu {
+	height: 7rem;
+	top: 4.5rem;
+}
+
+.fri {
+	height: 5rem;
+	top: 5.5rem;
+}
+
+.sat {
+	height: 10rem;
+	top: 3rem;
+}
+
+.san {
+	height: 6rem;
+	top: 5rem;
+}
+
+.summary {
+	display: flex;
+	min-width: 40rem;
+	height: 10rem;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid hsl(27, 21%, 82%);
+	padding:2rem;
+}
+.summary-text {
+	color: hsl(28, 10%, 53%);
+	font-size: 1.4rem;
+}
+.summary-text span {
+	color: hsl(25, 47%, 15%);
+	font-weight: 700;
+}
+.text-month {
+	font-size: 3.6rem;
+	font-weight: 700;
+	color: hsl(25, 47%, 15%);
+}
+.days {
+	display: flex;
+	justify-content: center;
+	gap: 22px;
+	margin-top: -20px;
+}
+.price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid hsl(25, 47%, 15%);
+	background-color: hsl(25, 47%, 15%);
+	width: 55px;
+	height: 20px;
+	color: white;
+	font-size: 1rem;
+	margin-top: -25px;
+	margin-left: -10px;
+}
+.hidden {
+	display: none;
+}
+.current-day {
+	background-color: hsl(186, 34%, 60%) !important;
+}
+
+@media (max-width: 500px) {
+	.main-container {
+
+		max-width: 100%;	
+	}
+	
+	.day{
+		width: 3rem;
+	}
+	.text-month {
+		font-size: 2.8rem;
+		
+	}
+	div.days {
+		
+		gap: 3rem;
+		
+	}
+	
+}

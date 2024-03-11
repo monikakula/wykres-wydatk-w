@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="header">
+      <div class="tittle">
+        <p class="text-head">My balance</p>
+        <p class="text-head"><span>$921.48</span></p>
+      </div>
+      <img src="images/logo.svg" alt="logo" />
+    </header>
+    <main class="chart-container">
+
+      <h1>Spending - Last 7 days</h1>
+      <div class="chart">
+        <div class="day mon">
+          <p class="price hidden"></p>
+        </div>
+        <div class="day tue">
+          <p class="price hidden"></p>
+        </div>
+        <div class="day wed">
+          <p class="price hidden">tue</p>
+        </div>
+        <div class="day thu">
+          <p class="price hidden"></p>
+        </div>
+        <div class="day fri">
+          <p class="price hidden"></p>
+        </div>
+        <div class="day sat">
+          <p class="price hidden"></p>
+        </div>
+        <div class="day san ">
+          <p class="price hidden "></p>
+        </div>
+      </div>
+      <div class="days">
+        <div><p>mon</p></div>
+        <div><p>thu</p></div>
+        <div><p>wed</p></div>
+        <div><p>thr</p></div>
+        <div><p>fri</p></div>
+        <div><p>sat</p></div>
+        <div><p>san</p></div>
+      </div>
+      <div class="summary">
+        <div class="chart-price">
+          <p class="summary-text">Total this month</p>
+          <p class="text-month"><span>$478.33</span></p>
+        </div>
+        <div class="last-month">
+          <p class="summary-text"><span> +2.4%</span></p>
+          <p class="summary-text">from last month</p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js" charset="UTF-8"></script>
+  </div>
+</body>
+
+</html>
